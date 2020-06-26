@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dark_standard_text_view_bg">#272727</color>
+    <color name="dark_standard_text_view_text_color">#919191</color>
+
+    <color name="dark_light_box_bg">#424242</color>
+
+    <!--toolbar-->
+    <color name="dark_toolbar_bg">#222222</color>
+    <color name="dark_toolbar_text_color">#DDDDDD</color>
+
+    <!--switch-->
+    <color name="dark_switch_text_color">#DDDDDD</color>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <!--standard_text_view-->
+    <color name="default_standard_text_view_bg">#FF9800</color>
+    <color name="default_standard_text_view_text_color">#000000</color>
+
+    <!--light_box-->
+    <color name="default_light_box_bg">#FFFFFF</color>
+
+    <!--toolbar-->
+    <color name="default_toolbar_bg">#FFBF00</color>
+    <color name="default_toolbar_text_color">#151515</color>
+
+    <!--switch-->
+    <color name="default_switch_text_color">#151515</color>
+
+</resources>

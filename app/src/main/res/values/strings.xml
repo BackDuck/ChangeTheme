@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ChangeThemeTest</string>
+    <string name="default_them_prefix">default</string>
+    <string name="dark_them_prefix">dark</string>
+    <string name="theme_prefix_key">THEME_PREFIX</string>
+    <string name="standard_text_view">standard_text_view</string>
+    <string name="light_box">light_box</string>
+    <string name="toolbar">toolbar</string>
+    <string name="switcher">switch</string>
+</resources>
