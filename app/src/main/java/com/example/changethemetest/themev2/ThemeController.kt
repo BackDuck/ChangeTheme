@@ -72,20 +72,10 @@ class ThemeController {
 
 
     private fun applyTheme(view: View) {
-        val tag = view.tag as String
-        /* var stringId = ""
-         val resId: String
-         context = view.context
+        (view.tag as? String)?.let { tag ->
 
-         if (id != View.NO_ID) {
-             val res = context.resources
-             if (res != null)
-                 stringId = res.getResourceEntryName(id) // get id string entry
-         }
-         resId = stringId.substring(stringId.lastIndexOf("__")+2)*/
-
-        when (tag) {
-            /* "ImageButton" -> {
+            when (tag) {
+                /* "ImageButton" -> {
                  (view as ImageButton).setImageDrawable(resourseManager.getDrawable(tag))
              }
 
@@ -93,45 +83,46 @@ class ThemeController {
                  (view as Button).background = resourseManager.getDrawable(tag)
              }*/
 
-            getString(R.string.standard_text_view) -> {
-                val id = getString(R.string.standard_text_view)
-                val targetView = view as TextView
+                getString(R.string.standard_text_view) -> {
+                    val id = getString(R.string.standard_text_view)
+                    val targetView = view as TextView
 
-                val textColor = resourseManager.getColor(textColorId(id))
-                val bgColor = resourseManager.getColor(bgColorId(id))
+                    val textColor = resourseManager.getColor(textColorId(id))
+                    val bgColor = resourseManager.getColor(bgColorId(id))
 
-                targetView.setTextColor(textColor)
-                targetView.setBackgroundColor(bgColor)
+                    targetView.setTextColor(textColor)
+                    targetView.setBackgroundColor(bgColor)
 
-            }
+                }
 
-            getString(R.string.light_box) -> {
-                val id = getString(R.string.light_box)
-                val targetView = view as ViewGroup
+                getString(R.string.light_box) -> {
+                    val id = getString(R.string.light_box)
+                    val targetView = view as ViewGroup
 
-                val bgColor = resourseManager.getColor(bgColorId(id))
+                    val bgColor = resourseManager.getColor(bgColorId(id))
 
-                targetView.setBackgroundColor(bgColor)
-            }
+                    targetView.setBackgroundColor(bgColor)
+                }
 
-            getString(R.string.toolbar) -> {
-                val id = getString(R.string.toolbar)
-                val targetView = view as Toolbar
+                getString(R.string.toolbar) -> {
+                    val id = getString(R.string.toolbar)
+                    val targetView = view as Toolbar
 
-                val bgColor = resourseManager.getColor(bgColorId(id))
-                val textColor = resourseManager.getColor(textColorId(id))
+                    val bgColor = resourseManager.getColor(bgColorId(id))
+                    val textColor = resourseManager.getColor(textColorId(id))
 
-                targetView.setBackgroundColor(bgColor)
-                targetView.setTitleTextColor(textColor)
-            }
+                    targetView.setBackgroundColor(bgColor)
+                    targetView.setTitleTextColor(textColor)
+                }
 
-            getString(R.string.switcher) -> {
-                val id = getString(R.string.switcher)
-                val targetView = view as Switch
+                getString(R.string.switcher) -> {
+                    val id = getString(R.string.switcher)
+                    val targetView = view as Switch
 
-                val textColor = resourseManager.getColor(textColorId(id))
+                    val textColor = resourseManager.getColor(textColorId(id))
 
-                targetView.setTextColor(textColor)
+                    targetView.setTextColor(textColor)
+                }
             }
         }
     }
